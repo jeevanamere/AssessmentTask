@@ -1,0 +1,6 @@
+<apex:page controller="Example_2" >
+    <apex:form >
+    <apex:commandButton value="submit" action="{!show}"/>
+        <apex:commandButton value="submit1" action="{!Show1}"/>
+    </apex:form>
+</apex:page>

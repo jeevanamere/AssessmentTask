@@ -1,0 +1,13 @@
+<apex:page controller="Method_inside_method" >
+    <apex:form >
+    <apex:commandButton value="submit" action="{!method_1}"/><br/>
+       <apex:outputLabel >x=</apex:outputLabel>
+        <apex:outputText value="{!x}"></apex:outputText><br/>
+        <apex:outputLabel >y=</apex:outputLabel>
+        <apex:outputText value="{!y}"></apex:outputText><br/>
+        <apex:outputLabel >z=</apex:outputLabel>
+        <apex:outputText value="{!z}"></apex:outputText><br/>
+        <apex:outputLabel >a=</apex:outputLabel>
+        <apex:outputText value="{!a}"></apex:outputText>
+    </apex:form>
+</apex:page>

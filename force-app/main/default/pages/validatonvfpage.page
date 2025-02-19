@@ -1,0 +1,10 @@
+<apex:page controller="validation" >
+    <apex:messages />
+    <apex:form >        
+        <apex:commandButton value="sal" action="{!validation}"/><br/>
+        enter exp: <apex:inputText value="{!exp}"/><br/>
+        sal={!sal}<br/>
+        bonus={!bonus}<br/>        
+        
+    </apex:form>
+</apex:page>

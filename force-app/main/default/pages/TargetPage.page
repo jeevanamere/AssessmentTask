@@ -1,0 +1,31 @@
+<apex:page controller="TargetPageVFController">
+<apex:form >
+<apex:pageBlock >
+<apex:pageBlockSection columns="2">
+<apex:selectList label="Domain URL" value="{!selectedDomainUrl}" size="1">
+<apex:selectOptions value="{!domainUrls}"/>
+</apex:selectList>
+<apex:selectList Label="Types" value="{!selectedType}" size="1">
+<apex:selectOptions value="{!Types}"/>
+</apex:selectList>
+<apex:commandButton value="Submit" action="{!retrieveMetadataTypes}"/>
+</apex:pageBlockSection>
+</apex:pageBlock>
+<apex:pageBlock >
+<table border="1">
+<thead>
+<tr>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<apex:repeat value="{!Names}" var="N">
+<tr>
+<td>{!N}</td>
+</tr>
+</apex:repeat>
+</tbody>
+</table>
+</apex:pageBlock>
+</apex:form>
+</apex:page>

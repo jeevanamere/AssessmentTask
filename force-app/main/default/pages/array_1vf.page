@@ -1,0 +1,8 @@
+<apex:page controller="Array_1">
+    <apex:form >
+    x={!x};<br/>
+        x={!x[1]};<br/>
+    x={!x[5]};    
+        
+    </apex:form>
+</apex:page>

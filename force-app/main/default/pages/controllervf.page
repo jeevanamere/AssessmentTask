@@ -1,0 +1,17 @@
+<apex:page controller="controller_class" >
+    <apex:form >
+    <apex:commandButton value="save" action="{!customer}"/>
+    <apex:commandButton value="Cancel" action="{!address}"/> 
+        <apex:pageblock >
+            <apex:pageBlockSection >
+                <apex:inputfield value="{!myLead.Lastname}"/>
+                <apex:inputfield value="{!myLead.Company}"/>
+                <apex:inputfield value="{!myLead.Status}"/>
+            </apex:pageBlockSection>
+        
+        </apex:pageblock>      
+        
+    </apex:form>
+    
+    
+</apex:page>

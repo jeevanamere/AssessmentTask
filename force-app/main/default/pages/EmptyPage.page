@@ -1,0 +1,27 @@
+<apex:page controller="OAuthTokenClass" action="{!retrieveCode}" >
+    <apex:pageBlock >
+        <apex:pageBlockSection >
+            <apex:form >
+                <apex:outputText value="You Are Successfully Authenticated" style="text-align: center; font-size:20px; "  />
+            </apex:form>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+    
+    <script>
+        // Define the delay in milliseconds before redirecting back
+        var delay = 2000; // 2 seconds
+        
+        // Function to close the current window and redirect back
+        function closeAndRedirect() {
+            // Close the current window
+            window.close();
+            
+        }
+
+        // Call the closeAndRedirect function after the specified delay
+        window.onload = function() {
+            setTimeout(closeAndRedirect, delay);
+        };
+    </script>
+
+</apex:page>

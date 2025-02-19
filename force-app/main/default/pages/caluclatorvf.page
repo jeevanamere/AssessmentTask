@@ -1,0 +1,27 @@
+<apex:page controller="caluclator" >
+    <apex:form >
+     <apex:commandButton value="add" action="{!add}"/>
+     <apex:commandButton value="sub" action="{!sub}"/>
+     <apex:commandButton value="multi" action="{!multi}"/>
+     <apex:commandButton value="clear" action="{!clear}"/> 
+       <apex:pageBlock title="Caluclator">
+           <apex:pageBlockSection >
+             <apex:pageBlockSectionItem >
+               Enter a <apex:inputText value="{!a}"/>
+             </apex:pageBlockSectionItem>
+               <apex:pageBlockSectionItem >
+               Enter b <apex:inputText value="{!b}"/>
+             </apex:pageBlockSectionItem>
+               <apex:pageBlockSectionItem >
+               Enter c <apex:inputText value="{!c}"/>
+             </apex:pageBlockSectionItem>
+                                 
+           
+           </apex:pageBlockSection>
+        
+        </apex:pageBlock> 
+    
+    </apex:form>
+    
+    
+</apex:page>

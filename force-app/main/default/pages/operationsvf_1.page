@@ -1,0 +1,23 @@
+<apex:page controller="Operations_1" >
+    <apex:form >
+        <apex:commandButton value="Add" action="{!Add}"/>
+        <apex:commandButton value="Sub" action="{!Sub}"/>
+        <apex:commandButton value="Multi" action="{!Multi}"/>
+        <apex:commandButton value="Div" action="{!Div}"/>
+        <apex:commandButton value="Clear" action="{!Clear}"/>
+    <apex:pageBlock title="Calculator">
+        <apex:pageBlockSection >
+          <apex:pageBlockSectionItem >
+            Enter x value <apex:inputText value="{!x}"/>
+           <!-- Enter y value <apex:inputText value="{!y}"/>  -->
+          </apex:pageBlockSectionItem>
+          <apex:pageBlockSectionItem >
+            Enter y value <apex:inputText value="{!y}"/>  
+          </apex:pageBlockSectionItem>  
+             <apex:pageBlockSectionItem >
+             Result value <apex:inputText value="{!z}"/>  
+          </apex:pageBlockSectionItem>  
+        </apex:pageBlockSection>        
+    </apex:pageBlock>
+    </apex:form>
+</apex:page>

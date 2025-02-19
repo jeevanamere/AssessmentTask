@@ -1,0 +1,8 @@
+<apex:page controller="Example_1" >
+    <apex:form >
+    <apex:commandButton value="submit" action="{!show}"/>
+        <apex:commandButton value="submit1" action="{!Add}"/>
+        <apex:commandButton value="submit2" action="{!Subtract}"/>
+        <apex:commandButton value="submit3" action="{!Multiply}"/>
+    </apex:form>
+</apex:page>

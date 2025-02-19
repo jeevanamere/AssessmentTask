@@ -1,11 +1,9 @@
 import { LightningElement, api } from 'lwc';
-import auth from '@salesforce/apex/AuthController.authenticateOrg';
+import authenticateOrg from '@salesforce/apex/AuthController.authenticateOrg';
 
-export default class AunthicateButton extends LightningElement {
-@api recordId;
-    url
-    result
-    error
+export default class AuthButton extends LightningElement {
+    @api recordId;
+    
     @api async invoke() {
         let params ={
             "orgId" : this.recordId

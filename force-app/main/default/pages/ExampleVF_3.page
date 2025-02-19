@@ -1,0 +1,10 @@
+<apex:page controller="Example_3" >
+    <apex:form >
+        
+        Name = {!Name}<br/><br/>
+        Branch = {!Branch}<br/><br/>
+        City = {!City}<br/>
+        <apex:commandButton value="Change" action="{!Show}"/>
+    </apex:form>
+    
+</apex:page>
