@@ -1,0 +1,48 @@
+<template>
+    <lightning-card title="MetaData Types And Objects">
+        <!-- Dropdowns for Domain URL and Info -->
+        <div class="slds-p-around_medium">
+            <lightning-combobox
+                name="OrgName"
+                label="OrgName"
+                value={selectedOrgName}
+                options={OrgNameOptions}
+                onchange={handleDomainUrlChange}>
+            </lightning-combobox>
+            <lightning-combobox
+                name="Select Type"
+                label="Select Type"
+                value={selectedType}
+                options={typeOptions}
+                onchange={handleTypeChange}>
+            </lightning-combobox>
+            <br>
+            <lightning-button
+                label="Submit"
+                onclick={handleSubmit}>
+            </lightning-button>
+        </div>
+ 
+        <!-- Display retrieved metadata types -->
+        <template if:true={metadataTypes}>
+            <div class="slds-p-around_medium">
+                <table class="slds-table slds-table_cell-buffer slds-table_bordered">
+                    <thead>
+                        <tr class="slds-line-height_reset">
+                            <th class="slds-cell-wrap" scope="col">
+                                <div class="slds-truncate" title="Metadata Type">Metadata Type</div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <template for:each={metadataTypes} for:item="type">
+                            <tr key={type}>
+                                <td class="slds-cell-wrap" data-label="Metadata Type">{type}</td>
+                            </tr>
+                        </template>
+                    </tbody>
+                </table>
+            </div>
+        </template>
+    </lightning-card>
+</template>

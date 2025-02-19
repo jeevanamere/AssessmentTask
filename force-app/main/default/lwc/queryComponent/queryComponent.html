@@ -1,0 +1,23 @@
+<template>
+<aura:component controller="MyController">
+    <aura:attribute name="contacts" type="Contact[]" />
+    <aura:handler name="init" value="{!this}" action="{!c.fetchData}" />
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <aura:iteration items="{!v.contacts}" var="contact">
+                <tr>
+                    <td>{!contact.Name}</td>
+                    <td>{!contact.Email}</td>
+                </tr>
+            </aura:iteration>
+        </tbody>
+    </table>
+</aura:component>
+</template>
