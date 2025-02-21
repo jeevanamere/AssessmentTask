@@ -5,7 +5,7 @@ public class AccountRatingTriggerHandler {
                 acc.Rating = 'Hot';
             }
             else {
-                acc.Rating = 'Hot';
+                acc.Rating = 'Cold';
             }
         }
     }
