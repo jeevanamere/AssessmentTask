@@ -38,6 +38,8 @@ $RECYCLE.BIN/
 
 # Local environment variables
 .env
+# Ignore Copado folder
+.copado/
 
 # Python Salesforce Functions
 **/__pycache__/
